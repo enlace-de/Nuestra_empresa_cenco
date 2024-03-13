@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    }
+
+    body {
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+   
+
+
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 63px;
+        background: #101b38;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+    .navbar {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .logo{
+        margin-left: 30px;
+    }
+    .logo a{
+        text-decoration: none;
+        color:aliceblue;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 20px 28px ;
+        color: aliceblue;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .navbar a:hover {
+        background: #c6cee3;
+    }
+
+    .header {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+
+      
+
+    p {
+        margin-bottom: 40px;
+        font-size: 18px;
+        ;
+        color: rgb(230, 222, 212);
+    }
+
+    .content{
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sau {
+        background: #101b38;
+        
+    }
+
+    .title2{
+        color: white;
+        font-size: 25px;
+    }
+    
+  
+    .inicio {
+
+        height: 70vh !important;
+        background-image: url(../img/header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        padding: 0 130px 0 130px;
+        
+    }
+
+.title{
+    margin-top: -190px;
+    font-size: 25px;
+}
+
+.seccion_blanco{
+    height: 300px;
+}
+/* footer*/
+footer{
+    background-color: rgb(43, 42, 42);
+    height: 70px;
+    padding-top: 20px;
+}
+
+.link_footer{
+    text-decoration: none;
+    color: rgb(205, 205, 205);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/*formulario*/
+
+.formulario{
+    color: black;
+    padding-top: 30px;
+}
+.tit3{
+    font-size: 25px;
+}
+
+/* Estilos del formulario */
+form {
+    width: 300px;
+    margin: 0 auto; 
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilos para las etiquetas */
+label {
+    font-weight: bold;
+}
+
+/* Estilos para el botón de enviar */
+button[type="submit"] {
+    background-color: #007bff; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+/* Estilos para el texto del botón de enviar */
+button[type="submit"] p {
+    margin: 0;
+}
+
+/* Estilos para el aviso */
+.aviso {
+    font-style: italic;
+    color: #666666;
+}
+
+/* Estilos para los campos obligatorios */
+.obligatorio {
+    color: red;
+    font-weight: bold;
+}
+
+/* imagenes de quienes somos*/
+
+.imagen {
+    display: inline-block;
+    margin: 10px;
+}
+
+.imagen img {
+    width: 250px; 
+    height: 200px; 
+}
+

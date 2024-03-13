@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Trabajo colaborativo CENCO</title> 
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="#somos">logo</a>
+        </div>
+
+        <nav class="navbar" id="somos">
+            <a href="./Index.html">Inicio</a>
+            <a href="./quienes_somos.html">Quienes somos</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <section class="content sau inicio">
+         <h1 class="title"> CONTACTANOS </h1>
+         
+   </section>
+
+
+    <section class="content sau ">
+        <h2 class="title2">Contacto</h2>
+        <br>
+        <br>
+        <p>telefono= +569 95122742</p>
+        <p>consultas@casaestudios.com</p>
+   </section>
+    
+   <div class="formulario">            
+    <h1 class="tit3">Formulario de contacto</h1>
+    <br><br>
+              <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+              <br><br>
+  
+                  <form id="miFormulario" action="submeter-formulario.php" method="post">               
+  
+                      
+                              <p>
+                                  <label for="nombre" class="colocar_nombre">Nombre
+                                      <span class="obligatorio">*</span>
+                                  </label>
+                                      <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                              </p>
+                          
+                              <p>
+                                  <label for="email" class="colocar_email">Email
+                                      <span class="obligatorio">*</span>
+                                  </label>
+                                      <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                              </p>
+                      
+                              
+                              <p>
+                                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                                      <span class="obligatorio">*</span>
+                                  </label>                     
+                                       <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                 </p>                                 
+                          
+                              <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                              <br><br>
+  
+                              <p class="aviso">
+                                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                              </p>                    
+                      
+                  </form>
+      </div>  
+  </div>
+
+  <footer>
+    <a class="link_footer" href="http://www.casaestudios.com/">Casa estudios Oficial</a>
+  </footer>
+     
+     <!-- Código JavaScript para validar formulario --> 
+     <script>
+        document.getElementById("miFormulario").addEventListener("submit", function(event) {
+            var nombre = document.getElementById("nombre").value;
+            var email = document.getElementById("email").value;
+
+            // Expresiones regulares para validar el nombre y el email
+            var nombreValido = /^[a-zA-Z\s]+$/;
+            var emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Verificar si el nombre no es válido
+            if (!nombreValido.test(nombre)) {
+                alert("Por favor, ingrese un nombre válido (solo letras y espacios).");
+                event.preventDefault();
+                return false;
+            }
+
+            // Verificar si el email no es válido
+            if (!emailValido.test(email)) {
+                alert("Por favor, ingrese un correo electrónico válido.");
+                event.preventDefault();
+                return false;
+            }
+
+            // Si todo está bien, se envía el formulario
+            return true;
+        });
+    </script>
+</body>
+</html>
